@@ -1,6 +1,6 @@
 #eureka config
 eureka.client.service-url.defaultZone: http://discovery-service:8761/eureka
-eureka.client.instance.prefer-ip-address: true
+
 
 # actuator config
 management:
