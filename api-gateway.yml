@@ -13,9 +13,10 @@ spring:
           filters:
             - StripPrefix=2
             - name: LoggingOrdersFilter
-            - name: Authentication
+            - name: Authorization
               args:
-                allowedRoles: ADMIN, SUPER_ADMIN
+                isEnabled: false
+
         - id: inventory-service
           uri: lb://INVENTORY-SERVICE
           predicates:
