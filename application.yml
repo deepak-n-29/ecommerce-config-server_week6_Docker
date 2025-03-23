@@ -1,0 +1,18 @@
+#eureka config
+eureka.client.service-url.defaultZone: http://localhost:8761/eureka
+eureka.client.instance.prefer-ip-address: true
+
+# actuator config
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#zipkin
+  tracing:
+    sampling:
+      probability: 1.0
+spring:
+  zipkin:
+    baseUrl: http://localhost:9411
