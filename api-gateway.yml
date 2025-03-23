@@ -15,7 +15,7 @@ spring:
             - name: LoggingOrdersFilter
             - name: Authentication
               args:
-                isEnabled: true
+                allowedRoles: ADMIN, SUPER_ADMIN
         - id: inventory-service
           uri: lb://INVENTORY-SERVICE
           predicates:
