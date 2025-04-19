@@ -18,7 +18,7 @@ spring:
                 isEnabled: false
 
         - id: inventory-service
-          uri: ${INVENTORY_SERVICE_URIlb://INVENTORY-SERVICE}
+          uri: ${INVENTORY_SERVICE_URI:lb://INVENTORY-SERVICE}
           predicates:
             - Path=/api/v1/inventory/**
           filters:
